@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* Ensure Tailwind v4 defaults map to our loaded Google Font variable */
+@theme {
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Your working dark mode core variant switch rule */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
