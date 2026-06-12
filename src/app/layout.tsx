@@ -28,6 +28,9 @@ const monoFont = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Lokesh R | Portfolio",
   description: "MERN Stack & Frontend Developer Portfolio",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({
